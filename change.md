@@ -1,48 +1,39 @@
-public class Main {
+public class Das {
     public static void main(String[] args) {
-        printThreeWords();
-        checkSumSing();
-        printColor();
+        HomeWork_1(5, 4);
+        HomeWork_2(-10);
+        HomeWork_3(234);
+        HomeWork_4(5,"Привет");
     }
-    // MethodOne:
-    public static void printThreeWords(){
-        System.out.println("Orange");
-        System.out.println("Banana");
-        System.out.println("Apple");
-    }
-    // MethodTwo:
-    public static int checkSumSing(){
-        int a = 5;
-        int b = 10;
+    public static int HomeWork_1 (int a , int b){
         int result = a + b;
-
-        if(result >= 0){
-            System.out.println("Сумма положительна");
-        } else {
-            System.out.println("Сумма отрицательная");
+        if(result > 20 ){
+            System.out.println("False");
+        }else if (result <10){
+            System.out.println("False");
+        }else{
+            System.out.println("True");
         }
         return result;
     }
-    // MethodThree :
-    public static void printColor(){
-        int value = 10;
-        if ( value <= 0){
-            System.out.println("Красный");
-        } else if (value <= 100){
-            System.out.println("Желтый");
-        }else {
-            System.out.println("Зеленый ");
+    public static void HomeWork_2(int a){
+        if (a < 0){
+            System.out.println("отрицательное  число");
+        }else if (a > 0){
+            System.out.println("положительное число ");
         }
+    }
+    public static void HomeWork_3(int a){
+        if ( a < 0){
+            System.out.println("True");
+        }else {
+            System.out.println("False");
+        }
+    }
+    public static void HomeWork_4(int number , String attempts){
+        for(int a =0; a < number;a++){
+            System.out.println(attempts);
+        }
+    }
 
-    }
-    // MethodFour :
-    public static void compareNumbers(){
-        int a = 5;
-        int b = 10;
-        if ( a >= b){
-            System.out.println("а >= b");
-        }else {
-            System.out.println(" a < b");
-        }
-    }
 }
