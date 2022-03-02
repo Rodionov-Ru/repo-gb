@@ -1,0 +1,28 @@
+public class Mas {
+    public static void main(String[] args) {
+        //Дз_1
+        int[]arr = new int[5];
+        for(int i = 0; i < arr.length ; i++ ){
+            int range = (int)(Math.random() * 2);
+            arr[i] = range;
+
+            if (arr[i] == 0){
+                arr[i] += 1;
+            }else{
+                arr[i] -= 1;
+            }
+        }
+        for (int i = 0; i < arr.length; i++){
+            System.out.println(arr[i]);
+
+        }
+        //ДЗ_2
+        int [] wer = new int[100];
+        for (int i = 0 ; i < wer.length ; i++){
+            wer[i] += i ;
+            System.out.println(wer[i]);
+        }
+
+
+
+   
